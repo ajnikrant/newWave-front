@@ -3,7 +3,21 @@
   .card {
     width: 25%;
     max-width: 280px;
-    background-color: lightblue;
+    box-shadow: 5px 10px 8px #8888887c;
+    margin: 20px;
+    overflow: hidden;
+  }
+
+  .card:hover{
+    box-shadow: 5px 10px 8px #e70505c5;
+
+  }
+
+  .card img{
+    transition: transform .5s ease;
+  }
+  .card:hover img {
+    transform: scale(1.2);
   }
 
   .itemList{
@@ -167,16 +181,35 @@ img {
 #homepage h3 {
   text-align: center;
 }
+/* -------- carousel------- */
 
+/* -------- top image carousel------- */
 
-
-
-
-.bannerlogo {
-  width: 400px;
-  margin-left: 35%;
-  background-color: black;
+#carouselExampleInterval{
+  width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+.carousel-item img{
+  height: 500px;
+  width: 900px;
+}
+
+.welcome-message img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* .bannerlogo {
+  width: 500px;
+  height: auto;
+  margin-left: 35%;
+  /* background-color: black; */
+/* } */
 
 /* ****** new form styling image****** */
 
@@ -194,11 +227,6 @@ img {
 #newform h2{
   text-align: center;
   padding-top: 80px;
-}
-
-.card-img-top:hover {
-  opacity: 0.5;
-
 }
 .icon {
   width: 65px;

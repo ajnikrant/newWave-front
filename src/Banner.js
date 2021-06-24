@@ -1,11 +1,11 @@
 import React from 'react';
-import widelogo from './widelogo.png'
+import newWave_name from './newWave_name.png'
 
 function Banner(){
     return (
         <>
         {/* <h1 id="banner">newWave</h1> */}
-        <img className="bannerlogo" src={widelogo} />
+        {/* <img className="bannerlogo" src={newWave_name} /> */}
         </>
     )
 }

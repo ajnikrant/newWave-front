@@ -4,7 +4,6 @@ import Filter from './Filter';
 import ItemList from './ItemList';
 
 function Categories({ filteredByCat, selectedCat, setSelectedCat, catClicked, setCatClicked, filterByPrice, setFilterChange, setSaleChange, saleTypeSelection}){
-    // const [catClicked, setCatClicked] = useState(false)
 
     const instrumentCats = filteredByCat.map(listing => {
         return listing.category
@@ -19,15 +18,12 @@ function Categories({ filteredByCat, selectedCat, setSelectedCat, catClicked, se
 
         
     return (
-        // <>
-        // <br></br><br></br>
          <main id="carousel">
              {catClicked ? <h1 className="categoryTitle">{selectedCat}</h1> : null}
             {catClicked ? <Filter  filterByPrice={filterByPrice} setFilterChange={setFilterChange} setSaleChange={setSaleChange} saleTypeSelection={saleTypeSelection} filteredByCat={filteredByCat}/> : null}
             {catClicked ? <ItemList filteredByCat={filteredByCat} /> : null}
             {catsArr}
         </main>           
-        // </>
     )
 }
 
