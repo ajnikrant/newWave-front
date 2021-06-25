@@ -3,7 +3,7 @@ import Categories from './Categories'
 import newWave_name from './newWave_name.png'
 
 
-function HomePage({ filteredByCat, selectedCat, setSelectedCat, catClicked, setCatClicked, filterByPrice, filterChange, setFilterChange, setSaleChange, saleTypeSelection}){
+function HomePage({ filteredByCat, selectedCat, setSelectedCat, catClicked, setCatClicked, filterChange, setFilterChange, setSaleChange, saleTypeSelection}){
 
     
     return (
@@ -61,7 +61,6 @@ function HomePage({ filteredByCat, selectedCat, setSelectedCat, catClicked, setC
                     setSelectedCat={setSelectedCat} 
                     catClicked={catClicked} 
                     setCatClicked={setCatClicked} 
-                    filterByPrice={filterByPrice}
                     filterChange={filterChange}
                     setFilterChange={setFilterChange}
                     setSaleChange={setSaleChange}
@@ -73,7 +72,6 @@ function HomePage({ filteredByCat, selectedCat, setSelectedCat, catClicked, setC
                         setSelectedCat={setSelectedCat} 
                         catClicked={catClicked} 
                         setCatClicked={setCatClicked} 
-                        filterByPrice={filterByPrice}
                         filterChange={filterChange}
                         setFilterChange={setFilterChange}
                         setSaleChange={setSaleChange}

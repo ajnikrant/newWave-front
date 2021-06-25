@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Filter({  filterByPrice, setFilterChange, setSaleChange, saleTypeSelection}){
+function Filter({setFilterChange, setSaleChange, saleTypeSelection}){
     
     
     function handlePriceFilterChange(e) {
         setFilterChange(e.target.value)
-        // filterByPrice()
     }
     
    function handleSaleToggle(e) {

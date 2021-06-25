@@ -144,7 +144,7 @@ function App() {
           <NewItemForm sendNewItemUp={addNewItem}/>
         </Route>
         <Route exact path="/listings">
-          <ItemList/>
+          <ItemList filteredByCat={filteredByCat} setFilterChange={setFilterChange} setSaleChange={setSaleChange} saleTypeSelection={saleTypeSelection}/>
         </Route>
         <Route exact path="/listings/:id">
           <ItemDetail removeDeleted={removeDeleted} editListing={editListing}/>

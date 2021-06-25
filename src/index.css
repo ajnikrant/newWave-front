@@ -9,7 +9,7 @@
   }
 
   .card:hover{
-    box-shadow: 5px 10px 8px #e70505c5;
+    box-shadow: 0 0 10px #e70505c5;
 
   }
 
@@ -328,7 +328,7 @@ img {
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  background-color: rgba(49, 32, 201, 0.2);
+  /* background-color: rgba(49, 32, 201, 0.2); */
   }
   
   .profileInfo { grid-area: 1 / 1 / 2 / 2;
@@ -404,4 +404,11 @@ img {
   .email-modal-content .btn-close{
     margin-top: 10px;
     margin-left: 90%;
+  }
+
+  /* *** nav bar *** */
+
+  .symbol {
+    height: 27px;
+    width: auto;
   }
